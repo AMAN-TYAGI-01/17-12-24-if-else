@@ -1,0 +1,107 @@
+#include <iostream>
+    using namespace std;
+    int main() {
+        
+        int option;
+        cout<<"enter number";
+        cin>>option;
+        if(option==1){
+            int a=10;
+            int b=20;
+            int temp;
+            temp=a;
+            a=b;
+            b=temp;
+            cout<<a<<endl<<b;
+        }
+        else if(option==2){
+            int a=30;
+            int b=40;
+            a=a+b;
+            b=a-b;
+            a=a-b;
+            cout<<a<<endl<<b;
+        }
+        else{
+            cout<<"invalid input";
+        }
+
+        <!-- reverse -->
+
+        int num=123;
+        cout<<num%10;
+      num= num/10;
+        
+        cout<<num%10;
+        num=num/10;
+        
+        cout<<num%10;
+        
+        // salary and taxes
+
+        int salary;
+        int tax;
+        cout<<"enter salary";
+        cin>>salary;
+        if(salary>=10000&&salary<=30000){
+            tax=(salary*10)/100;
+            salary=salary-tax;
+            cout<<"salary:"<<salary<<endl<<"tax:"<<tax;
+        }
+        else if(salary>=30000&&salary<=80000){
+            tax=(salary*20)/100;
+            salary=salary-tax;
+            cout<<"salary:"<<salary<<endl<<"tax:"<<tax;
+        }
+        else{
+            cout<<"invalid input";
+        }
+        <!-- section new -->
+        
+        int a;
+        int b;
+        cout<<"enter number";
+        cin>>a>>b;
+        if(a+b==10||a-b==10||a*b==10||a/b==10){
+            cout<<"valid";
+        }
+        else{
+            cout<<"invalid input";
+        }
+
+        // digit two and three
+    int num;
+    cout<<"number";
+    cin>>num;
+    if(num>=10&&num<=99){
+        cout<<"two digit";
+    }
+    else if(num>=100&&num<=999){
+        cout<<"three digit";
+    }
+    else if(num>=1000&&num<=9999){
+        cout<<"four digit";
+    }
+    else if(num>=0&&num<=9){
+        cout<<"single digit";
+    }
+    else{
+        cout<<"invalid input";
+    }
+
+    // km
+    int km;
+    cout<<"enter km";
+    cin>>km;
+    if(km>=0&&km<=10){
+        cout<<km*5;
+    }
+    else if(km>=10&&km<=25){
+        cout<<10*5+(km-10)*10;
+    }
+    else if(km>=25&&km<=50){
+        cout<<10*5+15*10+(km-25)*20;
+    }
+    else{
+        cout<<10*5+15*10+25*20+(km-50)*30;
+    }
